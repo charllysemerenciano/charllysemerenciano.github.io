@@ -5,8 +5,15 @@ $blue: #008BF8;
 $black-blue: #00518F;
 $background: #060A1F;
 
-main {
-  min-height: 100vh;
+body {
+  main {
+    min-height: 90vh;
+  }
+
+  footer {
+    min-height: 10vh;
+  }
+
   background: $background;
 
   #clock h2 {
@@ -22,7 +29,7 @@ main {
     );
   }
 
-  .box{
+  .box {
     width: 300px;
   }
 
@@ -58,5 +65,6 @@ main {
     }
 
   }
-
 }
+
+
