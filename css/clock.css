@@ -1,3 +1,43 @@
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800&display=swap");
+main {
+  min-height: 100vh;
+  background: #060A1F;
+}
+main #clock h2 {
+  margin: 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+main #clock #time {
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+main .box {
+  width: 300px;
+}
+main .box > div {
+  background: #00518F;
+}
+main .box span {
+  height: 150px;
+  font-weight: 300;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+main .box span:nth-child(2) {
+  height: 30px;
+  font-size: 0.4em;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  box-shadow: none;
+  background: #008BF8;
+  text-transform: uppercase;
+}
+main #time div:nth-child(4) span:nth-child(1) {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  background: #DC0073;
+}
+main #time div:nth-child(4) span:nth-child(2) {
+  background: #FF339C;
+}
 
 /*# sourceMappingURL=clock.css.map */

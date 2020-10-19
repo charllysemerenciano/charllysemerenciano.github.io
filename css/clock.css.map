@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"clock.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/clock.scss"],"names":[],"mappings":"AAAQ;AAOR;EACE;EACA,YAJW;;AAMX;EACE;EACA;EACA;EACA;;AAGF;EACE;;AAKF;EACE;;AAGF;EACE,YAzBS;;AA4BX;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA,YAzCG;EA0CH;;AAKA;EACE;EACA;;AAGF;EACE","file":"clock.css"}

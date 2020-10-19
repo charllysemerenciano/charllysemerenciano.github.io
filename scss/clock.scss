@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800&display=swap');
+
+$white: #FFFFFF;
+$blue: #008BF8;
+$black-blue: #00518F;
+$background: #060A1F;
+
+main {
+  min-height: 100vh;
+  background: $background;
+
+  #clock h2 {
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+  }
+
+  #clock #time {
+    -webkit-box-reflect: below 1px linear-gradient(
+                    transparent, #0004
+    );
+  }
+
+  .box{
+    width: 300px;
+  }
+
+  .box > div {
+    background: $black-blue;
+  }
+
+  .box span {
+    height: 150px;
+    font-weight: 300;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+  }
+
+  .box span:nth-child(2) {
+    height: 30px;
+    font-size: 0.4em;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+    box-shadow: none;
+    background: $blue;
+    text-transform: uppercase;
+  }
+
+  #time div:nth-child(4) {
+
+    span:nth-child(1) {
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+      background: #DC0073;
+    }
+
+    span:nth-child(2) {
+      background: #FF339C;
+    }
+
+  }
+
+}
