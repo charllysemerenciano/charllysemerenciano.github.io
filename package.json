@@ -1,0 +1,24 @@
+{
+  "name": "charllysemerenciano.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charllysemerenciano/charllysemerenciano.github.io.git"
+  },
+  "author": "Charllys Emerenciano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charllysemerenciano/charllysemerenciano.github.io/issues"
+  },
+  "homepage": "https://github.com/charllysemerenciano/charllysemerenciano.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
