@@ -4,91 +4,70 @@
     <title>Charllys Emerenciano</title>
 
     <meta charset="UTF-8">
+    <meta name="description" content="Charllys Emerenciano, desenvolvedor full-stack">
+    <meta name="author" content="Charllys Emerenciano">
 
+    <meta property="og:site_name" content="Charllys Emerenciano">
+    <meta property="og:site" content="https://charllysemerenciano.github.io/">
+    <meta property="og:title" content="Charllys Emerenciano">
+    <meta property="og:description" content="Charllys Emerenciano, desenvolvedor full-stack">
+    <meta property="og:image" content="/img/logos/fivecon-lean.png">
+    <meta property="og:url" content="https://charllysemerenciano.github.io/">
+    <meta property="og:type" content="article">
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
-<header></header>
-<main class="d-flex justify-content-center align-items-center">
-    <div id="clock">
-        <h2 class="text-white text-center h4">Launch Time</h2>
-        <div id="time" class="container text-white d-flex justify-content-center">
-            <div class="col-3 box m-2">
-                <div class="row text-center display-4">
-                    <span id="days" class="col-12 d-flex justify-content-center align-items-center">00</span>
-                    <span class="col-12">Days</span>
-                </div>
+<body class="bg-cultured">
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-violet">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <h4>Charllys Emerenciano</h4>
+            </a>
+
+            <!--            <button class="btn btn-secondary rounded-2 ml-5" type="button">-->
+            <!--                <a href="#">Curriculo</a>-->
+            <!--            </button>-->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-site">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-site">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Tecnologias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contatos</a>
+                    </li>
+                </ul>
+
             </div>
-            <div class="col-3 box m-2">
-                <div class="row text-center display-4">
-                    <span id="hours" class="col-12 d-flex justify-content-center align-items-center">00</span>
-                    <span class="col-12">Hours</span>
-                </div>
-            </div>
-            <div class="col-3 box m-2">
-                <div class="row text-center display-4">
-                    <span id="minutes" class="col-12 d-flex justify-content-center align-items-center">00</span>
-                    <span class="col-12">Minutes</span>
-                </div>
-            </div>
-            <div class="col-3 box m-2">
-                <div class="row text-center display-4">
-                    <span id="seconds" class="col-12 d-flex justify-content-center align-items-center">00</span>
-                    <span class="col-12">Seconds</span>
-                </div>
-            </div>
+
         </div>
-    </div>
+
+    </nav>
+
+</header>
+<main class="d-flex justify-content-center align-items-center">
+
 </main>
 <footer>
-    <div class="copyright text-center text-white">
-        <h4>By <a href="https://www.linkedin.com/in/charllysemerenciano/"><b>Charllys Emerenciano</b></a></h4>
-    </div>
+
 </footer>
 
-<script>
-    const days = document.getElementById('days');
-    const hours = document.getElementById('hours');
-    const minutes = document.getElementById('minutes');
-    const seconds = document.getElementById('seconds');
-
-    const dateLaunch = new Date("12/01/2020");
-
-    function calc() {
-        let dateNow = new Date();
-
-        // get total seconds between the times
-        let delta = Math.abs(dateLaunch - dateNow) / 1000;
-
-        // calculate (and subtract) whole days
-        let daysDiff = Math.floor(delta / 86400);
-        delta -= daysDiff * 86400;
-
-        // calculate (and subtract) whole hours
-        let hoursDiff = Math.floor(delta / 3600) % 24;
-        delta -= hoursDiff * 3600;
-
-        // calculate (and subtract) whole minutes
-        let minutesDiff = Math.floor(delta / 60) % 60;
-        delta -= minutesDiff * 60;
-
-        let secondsDiff = Math.floor(delta % 60);
-
-        console.log(delta)
-
-        days.innerHTML = daysDiff;
-        hours.innerHTML = hoursDiff;
-        minutes.innerHTML = minutesDiff;
-        seconds.innerHTML = secondsDiff;
-
-    }
-
-    calc();
-    let interval = setInterval(calc, 1000);
-
-</script>
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>

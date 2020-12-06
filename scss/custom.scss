@@ -1,0 +1,32 @@
+$russian-violet : #381D2AFF;
+$cultured : #F2F4F3FF;
+$dark-purple: #381d2aff;
+$queen-blue: #3e6990ff;
+$crimson: #d62839ff;
+$shamrock-green: #399e5aff;
+$dark-purple: #302f4dff;
+$space-cadet: #120d31ff;
+
+.rounded-1 {
+  border-radius: 10px;
+}
+.rounded-2 {
+  border-radius: 20px;
+}
+.rounded-3 {
+  border-radius: 30px;
+}
+.rounded-4 {
+  border-radius: 40px;
+}
+.rounded-5 {
+  border-radius: 50px;
+}
+
+.bg-violet{
+  background: $russian-violet;
+}
+
+.bg-cultured{
+  background: $cultured;
+}

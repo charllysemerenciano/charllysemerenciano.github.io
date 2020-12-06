@@ -1,0 +1,29 @@
+.rounded-1 {
+  border-radius: 10px;
+}
+
+.rounded-2 {
+  border-radius: 20px;
+}
+
+.rounded-3 {
+  border-radius: 30px;
+}
+
+.rounded-4 {
+  border-radius: 40px;
+}
+
+.rounded-5 {
+  border-radius: 50px;
+}
+
+.bg-violet {
+  background: #381D2AFF;
+}
+
+.bg-cultured {
+  background: #F2F4F3FF;
+}
+
+/*# sourceMappingURL=custom.css.map */
