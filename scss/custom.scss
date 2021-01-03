@@ -1,6 +1,39 @@
-$russian-violet: #120D31;
+$black-transparent: rgba(0, 0, 0, 0.75);
+$black: #000000;
+$russian-violet: #00296b;
 $space-cadet: #302F4D;
 $cultured: #F2F4F3;
+$white: #FFFFFF;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;700&display=swap');
+
+#nav {
+  background-color: transparent;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #30A0F0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-item {
+  a {
+    font-size: 1.4rem;
+  }
+}
+
 
 .rounded-1 {
   border-radius: 10px;
@@ -23,23 +56,44 @@ $cultured: #F2F4F3;
 }
 
 .bg-russian-violet {
-  background: $russian-violet;
+  background: $russian-violet !important;
 }
 
 .bg-cultured {
-  background: $cultured;
+  background: $cultured !important;
 }
 
 .bg-space-cadet {
-  background: $space-cadet;
+  background: $space-cadet !important;
+}
+
+.bg-black {
+  background: $black !important;
+}
+
+.bg-black:after {
+  background-color: $white;
 }
 
 .max-height {
   min-height: 100vh;
 }
 
+p {
+  font-size: 1.25rem;
+}
+
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, $cultured, $russian-violet, $cultured);
+  background-image: linear-gradient(to right, $black-transparent, $white, $black-transparent);
+}
+
+.tecno {
+  width: 150px;
+  height: 150px;
+}
+
+.tecno:hover {
+  border-style: solid;
 }

@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;700&display=swap");
+#nav {
+  background-color: transparent;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #30A0F0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-item a {
+  font-size: 1.4rem;
+}
+
 .rounded-1 {
   border-radius: 10px;
 }
@@ -19,25 +43,46 @@
 }
 
 .bg-russian-violet {
-  background: #120D31;
+  background: #00296b !important;
 }
 
 .bg-cultured {
-  background: #F2F4F3;
+  background: #F2F4F3 !important;
 }
 
 .bg-space-cadet {
-  background: #302F4D;
+  background: #302F4D !important;
+}
+
+.bg-black {
+  background: #000000 !important;
+}
+
+.bg-black:after {
+  background-color: #FFFFFF;
 }
 
 .max-height {
   min-height: 100vh;
 }
 
+p {
+  font-size: 1.25rem;
+}
+
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, #F2F4F3, #120D31, #F2F4F3);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), #FFFFFF, rgba(0, 0, 0, 0.75));
+}
+
+.tecno {
+  width: 150px;
+  height: 150px;
+}
+
+.tecno:hover {
+  border-style: solid;
 }
 
 /*# sourceMappingURL=custom.css.map */
