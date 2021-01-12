@@ -76,13 +76,25 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), #FFFFFF, rgba(0, 0, 0, 0.75));
 }
 
-.tecno {
-  width: 150px;
-  height: 150px;
+.card-rounded {
+  width: 10rem !important;
+  height: 10rem !important;
+  border-radius: 100% !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #FFFFFF;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-rounded img {
+  width: 100px;
 }
 
-.tecno:hover {
-  border-style: solid;
+.devicon {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=custom.css.map */

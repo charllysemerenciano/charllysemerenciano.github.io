@@ -89,11 +89,23 @@ hr {
   background-image: linear-gradient(to right, $black-transparent, $white, $black-transparent);
 }
 
-.tecno {
-  width: 150px;
-  height: 150px;
-}
+.card-rounded {
+  width: 10rem !important;
+  height: 10rem !important;
+  border-radius: 100% !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 
-.tecno:hover {
-  border-style: solid;
+  img {
+    width: 100px;
+  }
+}
+.devicon {
+  font-size: 2rem;
 }
