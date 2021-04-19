@@ -1,7 +1,9 @@
 $(function () {
     $('body').on('click', '.nav-item', function (e) {
         e.preventDefault();
-        $('html,body').animate({scrollTop: $($(this).find('.nav-link').attr('href')).offset().top}, 50);
+        $('html,body').animate({
+            scrollTop: $($(this).find('.nav-link').attr('href')).offset().top
+        }, 50);
         $('.nav-item').removeClass('active');
         $(this).closest('.nav-item').addClass('active');
     });
@@ -17,12 +19,16 @@ function checkScroll() {
     if ($(window).scrollTop() > startY) {
         $('.navbar').addClass("bg-black");
         $('#logo').text("Charllys Emerenciano");
-        $('#inicio > .container').css({'opacity': .5});
+        $('#inicio > .container').css({
+            'opacity': .5
+        });
 
     } else {
         $('.navbar').removeClass("bg-black");
         $('#logo').text("");
-        $('#inicio > .container').css({'opacity': 1});
+        $('#inicio > .container').css({
+            'opacity': 1
+        });
     }
 }
 
@@ -108,6 +114,12 @@ function reverseTypeWrite(element) {
     });
 }
 
+setTimeout(() => {
+    $('.loader_bg').css('z-index', 0);
+    $('.loader_bg').animate({
+        opacity: 0
+    });
+}, 2500);
 
 const typingAnimation = document.querySelector('.typing-animation');
 typeWrite(typingAnimation);

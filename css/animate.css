@@ -30,15 +30,15 @@ html {
 }
 
 .img-1 {
-  background-image: url("../img/teste.png");
+  background-image: url("../img/background-1.jpg");
 }
 
 .img-2 {
-  background-image: url("../img/teste2.png");
+  background-image: url("../img/background-2.jpg");
 }
 
 .img-3 {
-  background-image: url("../img/teste3.png");
+  background-image: url("../img/background-3.jpg");
 }
 
 .typing-animation {
